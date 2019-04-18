@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 380px;
+    height: 400px;
+    margin: 100px auto;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.container .content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+    /* float: left; */
+}
+.container .scroll{
+    position: absolute;
+    width: 28px;
+    border: 1px solid black;
+    right: 0;
+    top: 0;
+    height: 398px;
+
+}
+.container .scroll li{
+   
+    width: 100%;
+}
+
+
+.container .scroll li.up{
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+}
+.container .scroll li.down{
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+}
+/* icon 上面两个一样 可以单独写成要给类 */
+.container .scroll li img{
+    width: 27px;
+    height: 100%;
+}
+
+
+.container .scroll li.duration{
+    position: relative;
+    width: 100%;
+    height: 342px;
+   
+}
+.container .scroll li.duration .bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: red;
+     cursor: -webkit-grabbing;
+}
